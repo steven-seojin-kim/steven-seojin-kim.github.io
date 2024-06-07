@@ -40,11 +40,11 @@
 
     <h1>HSS207 Unessay</h1>
     
-    <p>My digital historical unessay is about “Verifying the Authorship of William Shakespeare’s Plays by Stylometry”.<br><br>
-        Stylometry means the application of the study of linguistic style. William Shakespeare wrote many works in his lifetime, and the amount is so vast that questions arise as to whether he could write them all alone.<br><br>
+    <p>My digital historical unessay is about “<strong>Verifying the Authorship of William Shakespeare’s Plays by Stylometry</strong>”.<br><br>
+        <strong>Stylometry</strong> means the application of the study of linguistic style. William Shakespeare wrote many works in his lifetime, and the amount is so vast that questions arise as to whether he could write them all alone.<br><br>
         One of the most common applications of stylometry is in authorship attribution. Given an anonymous text, it is sometimes possible to guess who wrote it by measuring certain features. In previous studies, they focused on authorship attribution of Shakespeare’s plays, analyzing the contributions of Shakespeare and other writers. However, in my unessay, I want to concentrate on observing how different his plays vary in writing style, and how did his style change in time.<br><br>
         Stylometry is the quantitative study of literary style through computational distant reading methods. It is based on the observation that authors tend to write in relatively consistent, recognizable and unique ways. Especially, the ways in which writers use small function words, such as articles, prepositions and conjunctions, has proven particularly telling. Function words have also been identified as important markers of literary genre and of chronology.<br><br>
-        There are various approaches to studying stylometry. I want to focus on the algorithmic approach in my unessay, the method called the word adjacency network. We cannot explain in psychological, or artistic terms just why various words cluster with other words. We can, however, capture for different texts just how far from one another they tend to place each of a large set of preselected words (“target words”) in which we are interested. It turns out that the habits of placement, that is, the choices of words and how far from one another they are placed vary enough from text to text. This idea will be a reliable test for identifying similarity for my unessay.<br><br>
+        There are various approaches to studying stylometry. I want to focus on the algorithmic approach in my unessay, the method called the <strong>word adjacency network</strong>. We cannot explain in psychological, or artistic terms just why various words cluster with other words. We can, however, capture for different texts just how far from one another they tend to place each of a large set of preselected words (“target words”) in which we are interested. It turns out that the habits of placement, that is, the choices of words and how far from one another they are placed vary enough from text to text. This idea will be a reliable test for identifying similarity for my unessay.<br><br>
         A word adjacency network (WAN) is a mathematical system, a Markov chain, that represents the proximities of certain words within a text. Given a list of words-of-interest, a text to process, the algorithm will record in a Markov chain, as a matrix, the averaged distances at which each of the words-of-interest is found from each of the others. I assumed that the habit of placing certain function words near to other function words is an authorial characteristic that varies from one writer to another in a distinctive and relatively consistent way.<br><br>
         The comparison of a WAN derived from one text, and the WAN derived from another text, is a comparison of differing probability distributions. For this comparison the standard measure from information theory known as Kullback-Leibler divergence, more colloquially, relative entropy may be used. When comparing the relative entropy between WANs from multiple texts, the lowest values tend to be in similar structure. This fact is exploited in application of the WAN method to my unessay, we can examine which plays of William Shakespeare’s has similar structure, and classifying his work according to how style has changed as time goes on and by other features.<br><br>
         As the time goes on, I will analyze his work and visualize them with images, especially using heat maps of values of the relative entropies. A heat map is a 2-dimensional data visualization technique that represents the magnitude of individual values within a dataset as a color. I will create a GitHub web page with a description and code of the project. Also, I am going to visualize my data with heat maps and various python libraries. Through my unessay, I look forward to filling the gap between literary research and data science, providing a wider perspective on Shakespeare’s contribution to literature and history.<br>
@@ -53,7 +53,7 @@
     <h2>Main Question</h2>
     <p>Compared to his status in English literature, not much is known about William Shakespeare's own life. Since Shakespeare's life information is very limited, the introduction of computer science allows a thorough and systematic analysis of research. With the lack of historical data on Shakespeare, it is very important to deduce indirectly the life or creative process through his work. In this process, computer science can provide new ideas through various tools.<br><br>
         Authorship of William Shakespeare is an active area of research. However, previous studies did not make sufficient research on Shakespeare's plays, such as just analyzing the contributions of Shakespeare and other writers. So, I wanted to focus on another research area, find out how similar Shakespeare's plays were in writing style.<br><br>
-        Therefore, my main question of my work will be “How different William Shakespeare’s plays varies in his writing style, and how did his style change in time?”. I will proactively use and apply some computer science techniques in my work.<br>
+        Therefore, my main question of my work will be “<strong>How different William Shakespeare’s plays varies in his writing style, and how did his style change in time?</strong>”. I will proactively use and apply some computer science techniques in my work.<br>
         </p>
 
     <h2>Main Messages</h2>
@@ -66,10 +66,10 @@
         </p>
     
     <h2>Visualization</h2>
-    <p>Below is the heatmap of relative entropies between William Shakespeare's plays:</p><br><br>
+    <p>Below is the <strong>heatmap</strong> of <strong>relative entropies</strong> between William Shakespeare's plays:</p><br><br>
     <img src="heatmap.png" alt="Image" style="width:200%;max-width:1200px;"><br><br>
 
-    <p>Below is the 3D plot of relative entropies between William Shakespeare's plays:</p><br><br>
+    <p>Below is the <strong>3D plot</strong> of <strong>relative entropies</strong> between William Shakespeare's plays:</p><br><br>
     <img src="3Dplot.png" alt="Image" style="width:200%;max-width:1200px;"><br><br>
 
     <p>To observe how different each Shakespeare play is, type abbreviation of the play you want to see in the box below.</p>
@@ -83,8 +83,62 @@
     <img id="image-display" src="" alt="Image will be displayed here" style="width:100%;max-width:800px;">
     <br><br>
 
+    <h2>Argument</h2>
+    <p>Todo : Analyze.</p>
+
     <h2>Discussion</h2>
-    <p>Todo.</p>
+    <p>
+        I have asked my historical question to <strong>ChatGPT</strong>. The answer from the machine is as follows.<br><hr>
+        How different did William Shakespeare’s plays vary in his writing style, and how did his style change over time?<br><br>
+        William Shakespeare's writing style evolved significantly over the course of his career, reflecting changes in both his personal artistic development and the broader trends in Elizabethan and Jacobean drama. Here’s a look at how his style varied across different periods and plays:<br><br>
+        <strong>Early Works (1590s)</strong><br><br>
+        Shakespeare's early plays, such as "Henry VI" (Parts 1, 2, and 3) and "The Comedy of Errors," show him experimenting with the established forms of his time. These plays are characterized by:<br>
+        <li>
+            <strong>Structured Verse</strong>: Regular iambic pentameter, with a clear, rhythmic quality.<br>
+        </li>
+        <li>
+            <strong>Rhetorical Flourish</strong>: Use of elaborate metaphors and classical allusions, reflective of his education and the tastes of the Elizabethan audience.<br>
+        </li>
+        <li>
+            <strong>Comedic Elements</strong>: Farcical humor and wordplay, especially in his comedies like "The Taming of the Shrew."<br><br>
+        </li>
+        <strong>Middle Period (Late 1590s to Early 1600s)</strong><br><br>
+        This period includes some of Shakespeare's most famous works, such as "Romeo and Juliet," "A Midsummer Night's Dream," and "Hamlet." His style during this time shows significant development:<br><br>
+        <li>
+            <strong>Complex Characters</strong>: A move towards more nuanced and psychologically complex characters, as seen in "Hamlet" and "Romeo and Juliet."<br>
+        </li>
+        <li>
+            <strong>Poetic Language</strong>: Rich, lyrical language and extended metaphors, particularly in the romantic and tragic genres.<br>
+        </li>
+        <li>
+            <strong>Innovative Plots</strong>: Experimentation with structure and dramatic tension, including the use of subplots and intricate storylines.<br><br>
+        </li>
+        <strong>Mature Works (Early 1600s)</strong><br><br>
+        Shakespeare's mature period includes tragedies like "Othello," "King Lear," and "Macbeth," as well as dark comedies and problem plays such as "Measure for Measure" and "Troilus and Cressida." Characteristics of this period include:<br><br>
+        <li>
+            <strong>Darker Themes</strong>: Exploration of betrayal, ambition, and existential despair, reflecting a more cynical and introspective view of human nature.<br>
+        </li>
+        <li>
+            <strong>Dense Language</strong>: A more compact and forceful use of language, with less rhetorical flourish and more focus on raw emotion and psychological depth.<br>
+        </li>
+        <li>
+            <strong>Structural Innovation</strong>: Greater complexity in narrative structure, often breaking traditional forms to enhance dramatic impact.<br><br>
+        </li>
+        <strong>Late Works (1610s)</strong><br><br>
+        In his final years, Shakespeare wrote romances such as "The Tempest," "The Winter's Tale," and "Cymbeline." These plays combine elements of comedy, tragedy, and fantasy, showcasing a synthesis of his earlier styles:<br><br>
+        <li>
+            <strong>Pastoral and Fantastical Elements</strong>: Use of magical and pastoral settings, reflective of a more escapist and redemptive tone.<br>
+        </li>
+        <li>
+            <strong>Redemption and Reconciliation</strong>: Themes of forgiveness, reconciliation, and the healing power of time.<br>
+        </li>
+        <li>
+            <strong>Mature Verse</strong>: A return to a more lyrical and harmonious style, blending the complexity of his middle period with the simplicity of his early works.<br><br>
+        </li>
+        <strong>Evolution of Style</strong><br><br>
+        Overall, Shakespeare's style evolved from the formal and structured verse of his early plays to a more flexible and expressive use of language in his mature works. This evolution reflects his growing mastery of dramatic and poetic techniques, as well as his deepening understanding of human nature. His later plays often show a blending of genres and a more philosophical approach to storytelling, marked by a profound exploration of themes such as identity, power, and the nature of reality.<br><hr>
+        Todo : Compare the core of the machine-generated answer with your own creative, compelling argument, and exhibit the comparison<br>
+    </p>
 
     <h2>References</h2>
     <p>Santiago Segarra, Mark Eisen, Gabriel Egan and Alejandro Ribeiro.
