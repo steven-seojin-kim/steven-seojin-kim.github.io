@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSS207 Unessay - Seojin Kim</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1, h2, h3 {
+            color: blue;
+        }
+        p {
+            color: black;
+        }
+        #image-display {
+            width: 200%;
+            max-width: 1200px;
+        }
+    </style>
+    <script>
+        function showImage() {
+            const input = document.getElementById("wordInput").value.toLowerCase();
+            const image = document.getElementById("image-display");
+            image.src = `similarity_plot_${input}.png`;
+            image.alt = `Image for ${input}`;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>HSS207 Unessay</h1>
+    
+    <p>My digital historical unessay is about “Verifying the Authorship of William Shakespeare’s Plays by Stylometry”.<br><br>
+        Stylometry means the application of the study of linguistic style. William Shakespeare wrote many works in his lifetime, and the amount is so vast that questions arise as to whether he could write them all alone.<br><br>
+        One of the most common applications of stylometry is in authorship attribution. Given an anonymous text, it is sometimes possible to guess who wrote it by measuring certain features. In previous studies, they focused on authorship attribution of Shakespeare’s plays, analyzing the contributions of Shakespeare and other writers. However, in my unessay, I want to concentrate on observing how different his plays vary in writing style, and how did his style change in time.<br><br>
+        Stylometry is the quantitative study of literary style through computational distant reading methods. It is based on the observation that authors tend to write in relatively consistent, recognizable and unique ways. Especially, the ways in which writers use small function words, such as articles, prepositions and conjunctions, has proven particularly telling. Function words have also been identified as important markers of literary genre and of chronology.<br><br>
+        There are various approaches to studying stylometry. I want to focus on the algorithmic approach in my unessay, the method called the word adjacency network. We cannot explain in psychological, or artistic terms just why various words cluster with other words. We can, however, capture for different texts just how far from one another they tend to place each of a large set of preselected words (“target words”) in which we are interested. It turns out that the habits of placement, that is, the choices of words and how far from one another they are placed vary enough from text to text. This idea will be a reliable test for identifying similarity for my unessay.<br><br>
+        A word adjacency network (WAN) is a mathematical system, a Markov chain, that represents the proximities of certain words within a text. Given a list of words-of-interest, a text to process, the algorithm will record in a Markov chain, as a matrix, the averaged distances at which each of the words-of-interest is found from each of the others. I assumed that the habit of placing certain function words near to other function words is an authorial characteristic that varies from one writer to another in a distinctive and relatively consistent way.<br><br>
+        The comparison of a WAN derived from one text, and the WAN derived from another text, is a comparison of differing probability distributions. For this comparison the standard measure from information theory known as Kullback-Leibler divergence, more colloquially, relative entropy may be used. When comparing the relative entropy between WANs from multiple texts, the lowest values tend to be in similar structure. This fact is exploited in application of the WAN method to my unessay, we can examine which plays of William Shakespeare’s has similar structure, and classifying his work according to how style has changed as time goes on and by other features.<br><br>
+        As the time goes on, I will analyze his work and visualize them with images, especially using heat maps of values of the relative entropies. A heat map is a 2-dimensional data visualization technique that represents the magnitude of individual values within a dataset as a color. I will create a GitHub web page with a description and code of the project. Also, I am going to visualize my data with heat maps and various python libraries. Through my unessay, I look forward to filling the gap between literary research and data science, providing a wider perspective on Shakespeare’s contribution to literature and history.<br>
+        </p>
+
+    <h2>Main Question</h2>
+    <p>Compared to his status in English literature, not much is known about William Shakespeare's own life. Since Shakespeare's life information is very limited, the introduction of computer science allows a thorough and systematic analysis of research. With the lack of historical data on Shakespeare, it is very important to deduce indirectly the life or creative process through his work. In this process, computer science can provide new ideas through various tools.<br><br>
+        Authorship of William Shakespeare is an active area of research. However, previous studies did not make sufficient research on Shakespeare's plays, such as just analyzing the contributions of Shakespeare and other writers. So, I wanted to focus on another research area, find out how similar Shakespeare's plays were in writing style.<br><br>
+        Therefore, my main question of my work will be “How different William Shakespeare’s plays varies in his writing style, and how did his style change in time?”. I will proactively use and apply some computer science techniques in my work.<br>
+        </p>
+
+    <h2>Main Messages</h2>
+    <p>My work aims to provide a new view of Shakespeare's study through an algorithmic approach. By analyzing Shakespeare's works, using the word adjacency network, the limitations of existing literature can be overcome, and new avenues of research can be opened.<br><br>
+        First, the literature of Shakespeare's existing studies has some limitations and has been based mainly on traditional methods of literary analysis. It is difficult to make an objective analysis due to the personal opinions and interpretations of literary critics and is inefficient in terms of time and effort to analyze Shakespeare's vast text one by one.<br><br>
+        Furthermore, it is difficult to identify hidden patterns because there are no tools to systematically compare similarities between works. To overcome these limitations, analyses using digital methods, especially the word adjacency network, have many positive effects. Through statistical algorithms and methods, consistent analysis is possible, and allows the rapid processing of large amounts of text data using computer science technologies. In addition, relationships in the text and theoretical measurements of information enable subjective similarities to hidden language patterns to be identified.<br><br>
+        My unessay offers new opportunities to study Shakespeare. Analyzing the changes in the similarities of works as time goes on, we can understand the changes in Shakespeare's plays by times and through the unusual patterns found in certain works, might clarify whether he has collaborated with other authors. It also helps understand and visualize complex data more intuitively to create new hypotheses.<br><br>
+        I made complex data more intuitive through visualization. The large amount of data generated can be easily identified through multiple processes and visualizations, which helps to establish and verify new hypotheses. For example, visualizing the similarities between Shakespeare's works can clearly show how Shakespeare’s works have changed over time.<br><br>
+        I also visually expressed similarities between Shakespeare’s plays, changes in time and patterns and provide research results in the form of a website so that users can interact directly with the data and explore the results of the analysis.<br>
+        </p>
+    
+    <h2>Visualization</h2>
+    <p>Below is the heatmap of relative entropies between William Shakespeare's plays:</p><br><br>
+    <img src="heatmap.png" alt="Image" style="width:200%;max-width:1200px;"><br><br>
+
+    <p>Below is the 3D plot of relative entropies between William Shakespeare's plays:</p><br><br>
+    <img src="3Dplot.png" alt="Image" style="width:200%;max-width:1200px;"><br><br>
+
+    <p>To observe how different each Shakespeare play is, type acronym of the play you want to see in the box below.</p>
+    <p>An acronym for each play(Listed by decade):<br><br>
+        Henry VI, part 1           : h6p1<br>
+        Henry VI, part 2           : h6p2<br>
+        Henry VI, part 3           : h6p3<br>
+        Richard III                : r3<br>
+        The Comedy of Errors       : tcoe<br>
+        Titus Andronicus           : ta<br>
+        Taming of the Shrew        : tots<br>
+        Two Gentlemen of Verona    : tgov<br>
+        Love's Labours Lost        : lll<br>
+        Romeo and Juliet           : raj<br>
+        Richard II                 : r2<br>
+        A Midsummer Night's Dream  : amnd<br>
+        King John                  : kj<br>
+        The Merchant of Venice     : tmov<br>
+        Henry IV, part 1           : h4p1<br>
+        Henry IV, part 2           : h4p2<br>
+        Much Ado About Nothing     : maan<br>
+        Henry V                    : h5<br>
+        Julius Caesar              : jc<br>
+        As You Like It             : ayli<br>
+        Twelfth Night              : tn<br>
+        Hamlet                     : ham<br>
+        The Merry Wives of Windsor : tmwow<br>
+        Troilus and Cressida       : tac<br>
+        All's Well That Ends Well  : awtew<br>
+        Measure for Measure        : mfm<br>
+        Othello                    : oth<br>
+        King Lear                  : kl<br>
+        Macbeth                    : mac<br>
+        Antony and Cleopatra       : aac<br>
+        Coriolanus                 : cor<br>
+        Timon of Athens            : toa<br>
+        Pericles, Prince of Tyre   : ppot<br>
+        Cymbeline                  : cym<br>
+        Winter's Tale              : wt<br>
+        The Tempest                : tt<br>
+        Henry VIII                 : h8<br>
+    </p>
+
+    <input type="text" id="wordInput" placeholder="Enter a word (e.g., aac)">
+    <button onclick="showImage()">Show Image</button>
+    <br><br>
+    <img id="image-display" src="" alt="Image will be displayed here" style="width:100%;max-width:800px;">
+    <br><br>
+    
+    <p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>
